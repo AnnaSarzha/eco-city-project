@@ -1,13 +1,12 @@
+import Slideshow from '../components/Slideshow';
+
 function Home() {
   return (
     <div className="home-page">
-      <section className="hero">
-        <div className="hero-content">
-          <h1>Eco City Project</h1>
-          <p className="hero-subtitle">Вместе сделаем город чище</p>
-        </div>
-      </section>
+      {/* Слайд-шоу */}
+      <Slideshow />
       
+      {/* Описание проекта */}
       <section className="about">
         <div className="container">
           <h2>Почему это важно?</h2>
