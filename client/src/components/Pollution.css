@@ -1,0 +1,278 @@
+.pollution-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+/* Заголовок страницы */
+.pollution-header {
+  background: linear-gradient(135deg, #e8f5e9 0%, #d4edda 100%);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.pollution-header h1 {
+  font-size: 48px;
+  color: #1b4332;  /* Более тёмный зелёный */
+  margin: 0 0 15px 0;
+}
+
+.pollution-header p {
+  font-size: 20px;
+  color: #2d6a4f;  /* Зелёный */
+  margin: 0;
+}
+
+/* Контейнер */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Категории */
+.pollution-categories {
+  padding: 80px 0;
+}
+
+.pollution-categories h2 {
+  font-size: 36px;
+  color: #1b4332;  /* Тёмно-зелёный */
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.category-card {
+  background: white;
+  border: 3px solid;
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.category-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.category-card h3 {
+  font-size: 22px;
+  color: #2e7d32;
+  margin: 0 0 15px 0;
+}
+
+.category-card p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0 0 15px 0;
+}
+
+.category-stat {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #424242;
+  font-weight: 600;
+}
+
+/* Статистика */
+.pollution-stats {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.pollution-stats h2 {
+  font-size: 36px;
+  color: #1b4332;  /* Тёмно-зелёный */
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.stat-box {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-box h3 {
+  font-size: 48px;
+  color: #2d6a4f;  /* Средне-зелёный */
+  margin: 0 0 10px 0;
+}
+
+.stat-box p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+/* Форма */
+.pollution-form-section {
+  padding: 80px 0;
+}
+
+.pollution-form-section h2 {
+  font-size: 36px;
+  color: #1b4332;  /* Тёмно-зелёный */
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.pollution-form-section > .container > p {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin: 0 0 50px 0;
+}
+
+.pollution-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #424242;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 16px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #1b5e20;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+}
+
+/* Сообщение об успехе */
+.success-message {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 60px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.success-message h3 {
+  font-size: 28px;
+  color: #2e7d32;
+  margin: 20px 0 10px 0;
+}
+
+.success-message p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 768px) {
+  .pollution-header h1 {
+    font-size: 36px;
+  }
+  
+  .pollution-header p {
+    font-size: 16px;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .pollution-form {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

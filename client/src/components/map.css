@@ -1,0 +1,288 @@
+.map-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+/* Заголовок */
+.map-header {
+  background: linear-gradient(135deg, #e8f5e9 0%, #d4edda 100%);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.map-header h1 {
+  font-size: 48px;
+  color: #1b4332;
+  margin: 0 0 15px 0;
+}
+
+.map-header p {
+  font-size: 20px;
+  color: #2d6a4f;
+  margin: 0;
+}
+
+/* Контейнер */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Фильтры */
+.map-filters {
+  padding: 40px 0;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 2px solid;
+  border-radius: 25px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn.active {
+  color: white;
+}
+
+/* Карта */
+.map-container {
+  padding: 40px 0;
+}
+
+.map-container .leaflet-container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.map-container .ymaps-2-1-79-map {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Легенда */
+.map-legend {
+  padding: 60px 0;
+  background: white;
+}
+
+.map-legend h2 {
+  font-size: 36px;
+  color: #1b4332;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.legend-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.legend-marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.legend-item span {
+  font-size: 16px;
+  color: #424242;
+  font-weight: 600;
+}
+
+/* Статистика */
+.map-stats {
+  padding: 80px 0;
+}
+
+.map-stats h2 {
+  font-size: 36px;
+  color: #1b4332;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.stat-box {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-box h3 {
+  font-size: 48px;
+  color: #2d6a4f;
+  margin: 0 0 10px 0;
+}
+
+.stat-box p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+/* Кнопка добавить */
+.map-add {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f4 100%);
+}
+
+.add-point-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 18px 40px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-point-btn:hover {
+  background: #1b5e20;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
+}
+
+/* Контент балуна */
+.balloon-content {
+  padding: 10px;
+  max-width: 250px;
+}
+
+.balloon-content p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .map-header h1 {
+    font-size: 36px;
+  }
+  
+  .map-header p {
+    font-size: 16px;
+  }
+  
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter-btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+  
+  .map-container iframe {
+    height: 400px !important;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.map-attribution {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #999;
+}
+
+.map-attribution a {
+  color: #999;
+}
+/* Цветные маркеры */
+.custom-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.custom-marker div {
+  transition: all 0.3s ease;
+}
+
+.custom-marker:hover div {
+  transform: rotate(-45deg) scale(1.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Улучшаем popup */
+.leaflet-popup-content-wrapper {
+  border-radius: 15px !important;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2) !important;
+}
+
+.leaflet-popup-content {
+  margin: 15px !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+.leaflet-popup-tip {
+  box-shadow: none !important;
+}
