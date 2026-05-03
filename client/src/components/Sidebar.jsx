@@ -23,8 +23,8 @@ function Sidebar() {
       {/* Боковая панель */}
       <motion.div 
         className={`sidebar ${isOpen ? 'open' : ''}`}
-        initial={{ x: '-100%' }}
-        animate={{ x: isOpen ? 0 : '-100%' }}
+        initial={{ x: '100%' }}
+        animate={{ x: isOpen ? 0 : '100%' }}
         transition={{ duration: 0.3 }}
       >
         <div className="sidebar-header">
