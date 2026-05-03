@@ -1,7 +1,9 @@
+import { Home, BarChart3, User, Map, Menu } from 'lucide-react';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
+import { Leaf } from 'lucide-react';
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,22 +30,22 @@ function Sidebar() {
         transition={{ duration: 0.3 }}
       >
         <div className="sidebar-header">
-          <h2>🌿 Eco City</h2>
+          <h2><Leaf size={24} color="#2e7d32" /> Eco City</h2>
         </div>
-        <nav className="sidebar-nav">
-          <Link to="/" onClick={() => setIsOpen(false)}>
-            <span>🏠</span> Главная
-          </Link>
-          <Link to="/pollution" onClick={() => setIsOpen(false)}>
-            <span>📊</span> Загрязнения
-          </Link>
-          <Link to="/account" onClick={() => setIsOpen(false)}>
-            <span>👤</span> Аккаунт
-          </Link>
-          <Link to="/map" onClick={() => setIsOpen(false)}>
-            <span>🗺️</span> Карта
-          </Link>
-        </nav>
+       <nav className="sidebar-nav">
+  <Link to="/" onClick={() => setIsOpen(false)}>
+    <Home size={20} /> Главная
+  </Link>
+  <Link to="/pollution" onClick={() => setIsOpen(false)}>
+    <BarChart3 size={20} /> Загрязнения
+  </Link>
+  <Link to="/account" onClick={() => setIsOpen(false)}>
+    <User size={20} /> Аккаунт
+  </Link>
+  <Link to="/map" onClick={() => setIsOpen(false)}>
+    <Map size={20} /> Карта
+  </Link>
+</nav>
       </motion.div>
 
       {/* Затемнение фона */}

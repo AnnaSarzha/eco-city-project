@@ -1,4 +1,5 @@
 import Slideshow from '../components/Slideshow';
+import Statistics from '../components/Statistics';
 
 function Home() {
   return (
@@ -31,6 +32,9 @@ function Home() {
           </div>
         </div>
       </section>
+      
+      {/* Статистика */}
+      <Statistics />
     </div>
   );
 }
