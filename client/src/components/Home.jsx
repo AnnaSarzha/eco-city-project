@@ -1,5 +1,6 @@
 import Slideshow from '../components/Slideshow';
 import Statistics from '../components/Statistics';
+import Author from './Author';
 
 function Home() {
   return (
@@ -35,6 +36,7 @@ function Home() {
       
       {/* Статистика */}
       <Statistics />
+      <Author />
     </div>
   );
 }
