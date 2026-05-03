@@ -44,7 +44,7 @@ function Slideshow() {
           
           {/* Заголовок сайта поверх фото */}
           <div className="slide-content">
-            <h1 className="slide-title">Eco City Project</h1>
+            <h1 className="slide-title">Проект: Эко Город</h1>
             <p className="slide-subtitle">Вместе сделаем город чище</p>
           </div>
         </motion.div>

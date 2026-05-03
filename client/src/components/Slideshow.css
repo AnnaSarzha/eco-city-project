@@ -37,23 +37,30 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 20px;
+  padding: 20px 40px;  /* Меньше отступы */
+  background: rgba(255, 255, 255, 0.3);  /* Более прозрачный (было 0.85) */
+  border-radius: 15px;  /* Чуть меньше скругление */
+  backdrop-filter: blur(5px);  /* Меньше размытие */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 700px;  /* Уже ширина */
+  margin: 0 auto;
 }
 
 .slide-title {
   font-size: 64px;
-  color: #2e7d32;
+  color: #2e7d32;  /* Тёмно-зелёный для контраста */
   margin: 0 0 10px 0;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  text-shadow: none;  /* Убираем тень, т.к. есть подложка */
+  line-height: 1.2;
 }
 
 .slide-subtitle {
   font-size: 24px;
-  color: #424242;
-  margin: 25px 0 0 0;  /* ← Добавили отступ сверху 15px */
+  color: #424242;  /* Тёмно-серый для контраста */
+  margin: 15px 0 0 0;
   font-weight: 400;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  text-shadow: none;  /* Убираем тень */
 }
 
 /* Индикаторы (точки внизу) */
