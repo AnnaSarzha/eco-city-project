@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar';
 import Home from './components/Home';
 import Account from './components/Account';
 import Pollution from './components/Pollution';
+import AboutAuthor from './components/AboutAuthor';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/pollution" element={<Pollution />} />
           <Route path="/map" element={<MapPage />} />
+          <Route path="/about-author" element={<AboutAuthor />} />
         </Routes>
       </div>
     </Router>

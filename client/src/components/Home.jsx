@@ -1,6 +1,7 @@
 import Slideshow from '../components/Slideshow';
 import Statistics from '../components/Statistics';
-import Author from './Author';
+import { Link } from 'react-router-dom';
+
 
 function Home() {
   return (
@@ -36,7 +37,11 @@ function Home() {
       
       {/* Статистика */}
       <Statistics />
-      <Author />
+      <div className="author-link-container">
+  <Link to="/about-author" className="author-link">
+    Об авторе
+  </Link>
+</div>
     </div>
   );
 }

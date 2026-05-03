@@ -1,0 +1,412 @@
+.about-author-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+/* Навигация */
+.author-nav {
+  background: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-back {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-back:hover {
+  color: #1b4332;
+  transform: translateX(-5px);
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #424242;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #2e7d32;
+}
+
+/* Контейнер */
+.author-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Шапка с фото */
+.author-header {
+  background: white;
+  border-radius: 20px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 50px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.photo-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, #e8f5e9 0%, #d4edda 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2e7d32;
+}
+
+.photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.info-section h1 {
+  font-size: 36px;
+  color: #1b4332;
+  margin: 0 0 10px 0;
+}
+
+.position {
+  font-size: 18px;
+  color: #2e7d32;
+  margin: 0 0 30px 0;
+  font-weight: 500;
+}
+
+.details {
+  margin-bottom: 30px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #424242;
+}
+
+.detail-item strong {
+  display: block;
+  color: #1b4332;
+  margin-bottom: 5px;
+}
+
+.detail-item p {
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-link.vk {
+  background: #4a76a8;
+}
+
+.social-link.telegram {
+  background: #0088cc;
+}
+
+.social-link.email {
+  background: #ea4335;
+}
+
+/* О проекте */
+.project-section {
+  background: white;
+  border-radius: 20px;
+  padding: 50px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.project-section h2 {
+  font-size: 32px;
+  color: #1b4332;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.project-block {
+  margin-bottom: 30px;
+}
+
+.project-block h3 {
+  font-size: 22px;
+  color: #2e7d32;
+  margin: 0 0 15px 0;
+}
+
+.project-block p {
+  color: #424242;
+  line-height: 1.8;
+  margin: 0 0 15px 0;
+}
+
+.project-block ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #424242;
+}
+
+.project-block li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Контакты */
+.contact-section {
+  background: white;
+  border-radius: 20px;
+  padding: 50px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  color: #1b4332;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.contact-info h3,
+.contact-form h3 {
+  font-size: 24px;
+  color: #2e7d32;
+  margin: 0 0 25px 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #424242;
+}
+
+.contact-item strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #1b4332;
+}
+
+.contact-item p {
+  margin: 0;
+}
+
+.contact-note {
+  color: #757575;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Форма */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #1b4332;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e8f5e9;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #2e7d32 0%, #1b4332 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.3);
+}
+
+/* Футер */
+.author-footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #757575;
+}
+
+.author-footer p {
+  margin: 5px 0;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .author-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .photo-section {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .details {
+    text-align: left;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .author-container {
+    padding: 40px 15px;
+  }
+  
+  .author-header,
+  .project-section,
+  .contact-section {
+    padding: 30px 20px;
+  }
+}
+/* Стили для иконок */
+.block-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.block-header h3 {
+  margin: 0;
+  color: #2e7d32;
+}
+
+.block-header svg {
+  color: #2e7d32;
+  flex-shrink: 0;
+}
+
+/* Анимированное сердечко в футере */
+.made-with-love {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #757575;
+}
+
+.heart-icon {
+  color: #2e7d32;
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(1.2);
+  }
+  20%, 40% {
+    transform: scale(1);
+  }
+}
+
+/* Цвета иконок */
+.detail-item svg,
+.contact-item svg {
+  color: #2e7d32;
+  flex-shrink: 0;
+}
+
+.social-link svg {
+  flex-shrink: 0;
+}
